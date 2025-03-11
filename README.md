@@ -17,7 +17,7 @@ a pasta do projeto.
 _ATENÇÃO_: lembrar de deixar _público_, desmarcando 
 a opção _"keep this code private"_
 
-## Como crir um projeto em React com NextJS
+## Como criar um projeto em React com NextJS
 Para criar um novo projeto em React usando o NextJS, faça:
 1. Abrir o _cmd_ na pasta desejada e rodar o comando `npm create-next-app`
 2. Marcar para _não_ usar _TypeScript_. Os demais deixa padrão.
