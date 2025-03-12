@@ -3,42 +3,54 @@
 import { useState } from "react";
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-export default function Contato() {
-    const [nome, alteraNome] = useState("");
-    const [mensagem, alteraMensagem] = useState("");
 
-    function enviarMensagem(e) {
+export default function Painel() {
+    const [usuario, crieUsuario] = useState("");
+    const [senha, crieSenha] = useState("");
+
+    function handleLogin(e) {
         e.preventDefault();
 
-        if (nome === "" || mensagem === "") {
+        if (usuario === "" || senha === "") {
             toast.error("Por favor, preencha todos os campos!");
         } else {
-            toast.success("Mensagem enviada com sucesso!");
-            
+            toast.success("Login realizado com sucesso!");
         }
     }
-    // Testando um teste com uma testada
+
     return (
         <div>
-            <h1>Página de contato</h1>
-            <p>Entre em contato conosco</p>
-            <hr />
-
-            <form onSubmit={enviarMensagem}>
+            <h1>Painel Administrativo</h1>
+            
+            <form onSubmit={handleLogin}>
                 <label>
-                    Digite seu nome:
-                    <input value={nome} onChange={(e) => alteraNome(e.target.value)} />
+                    Digite o usuário:
+                    <input 
+                        type="text" 
+                        value={usuario} 
+                        onChange={(e) => crieUsuario(e.target.value)}
+                    />
                 </label>
-                <br />
-
+                <br/>
+                
                 <label>
-                    Digite sua mensagem:
-                    <input value={mensagem} onChange={(e) => alteraMensagem(e.target.value)} />
+                    Digite a senha:
+                    <input 
+                        type="password" 
+                        value={senha} 
+                        onChange={(e) => crieSenha(e.target.value)}
+                    />
                 </label>
-                <br />
+                <br/>
+                
+                <button type="submit">Entrar</button>
+                <div >
 
-                <button>Enviar</button>
+                </div>
+
+
             </form>
             <ToastContainer />
         </div>
