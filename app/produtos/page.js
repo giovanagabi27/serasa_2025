@@ -1,5 +1,6 @@
-'use client'
-import { useState } from "react"
+'use client';
+
+import { useState } from "react";
 
 function produtos(){
     return(
