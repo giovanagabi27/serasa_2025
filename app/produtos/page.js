@@ -20,10 +20,10 @@ function produtos(){
 
             <hr/>
 
-           <Produto/>
-           <Produto/>
-           <Produto/>
-           <Produto/>
+           <Produto nome="Maçã" preco="6,50" desconto="20"/>
+           <Produto nome="Uva" preco="7,90" />
+           <Produto nome="Pera" preco="6,90" />
+           
            
            <hr/>
 
