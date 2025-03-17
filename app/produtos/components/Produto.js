@@ -1,22 +1,17 @@
-'use client';
+import Produto from "./components/Produto";
 
-
-import { useState } from "react";
-import Painel from "../contato/page";
-
-function produtos(){
+function Produto(){
     return(
         <div>
-            <h1>Produtos</h1>
-            <p>Bem-vindo a página de produtos 😋</p>
-
-            <hr/>
-
+           
             <div style={{margim: 10, border: "1px solid grey ", width: 100,}}>
                 <h2>Maçã</h2>
                 <p>R$ 19,90</p>
                 <button>Comprar</button>
-                
+              <hr/>
+              
+              <Produto/>
+
             </div>
             
 
@@ -26,4 +21,4 @@ function produtos(){
         </div>
     );
 }
-export default produtos;
+export default Produto;
