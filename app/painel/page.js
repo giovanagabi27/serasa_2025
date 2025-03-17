@@ -23,6 +23,7 @@ export default function Painel() {
         <div>
             <h1>Painel Administrativo</h1>
             
+            
             <label>
                 Digite o usuário:
                 <input 
