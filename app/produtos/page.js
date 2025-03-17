@@ -1,6 +1,8 @@
 'use client';
 
+
 import { useState } from "react";
+import Painel from "../contato/page";
 
 function produtos(){
     return(
@@ -21,5 +23,6 @@ function produtos(){
 
             
         </div>
-    )
+    );
 }
+export default produtos;
