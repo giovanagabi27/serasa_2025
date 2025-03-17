@@ -13,7 +13,7 @@ function produtos(){
             </div>
 
             <Menu/>
-            <Menu/>
+            
 
             <h1>Produtos</h1>
             <p>Bem-vindo a página de produtos 😋</p>
