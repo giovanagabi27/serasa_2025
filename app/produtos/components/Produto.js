@@ -1,4 +1,4 @@
-import Produto from "./components/Produto";
+
 
 function Produto(){
     return(
@@ -10,7 +10,7 @@ function Produto(){
                 <button>Comprar</button>
               <hr/>
               
-              <Produto/>
+              
 
             </div>
             

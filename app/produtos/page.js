@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import Painel from "../contato/page";
+import Produto from "./components/Produto";
 
 function produtos(){
     return(
@@ -12,13 +13,15 @@ function produtos(){
 
             <hr/>
 
-            <div style={{margim: 10, border: "1px solid grey ", width: 100,}}>
-                <h2>Maçã</h2>
-                <p>R$ 19,90</p>
-                <button>Comprar</button>
-                
-            </div>
-            
+           <Produto/>
+           <Produto/>
+           <Produto/>
+           <Produto/>
+           
+           
+           
+
+           
 
             
 
